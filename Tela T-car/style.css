@@ -51,6 +51,10 @@ header {
     color: white;
 }
 
+textarea{
+  resize: none; /* para manter a text area fixa o tamanho */
+}
+
 .tela_inicial {
     display: flex;
     align-items: center;
