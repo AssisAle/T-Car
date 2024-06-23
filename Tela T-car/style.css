@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+   /* border: 1px solid red;*/
 }
 
 body {
@@ -20,6 +20,8 @@ header {
     height: fit-content;
     position: fixed;
     top: 0;
+    height: 13%;
+    z-index: 1000; /*propriedade para as imagens não sobrepor a barra de navegação*/
 }
 
 .barra_navegacao {
@@ -158,12 +160,22 @@ header {
     width: 64%;
 }
 
+.bmw_2022_inicio
+{
+    width: 68%;
+}
+
+.audia7_2021_inicio
+{
+    width: 71%;
+}
+
 .botao_comprar
 {
   background-color: #000;
   border: none;
   padding: 15px;
-  width: 80%;
+  width: 100%;
   color: #fff;
   font-size: 1rem;
   font-weight: bold;
@@ -226,7 +238,7 @@ header {
     margin: 0 0 0 120px;
   }
   .carros_inicio{
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .card_carros div{
@@ -242,5 +254,1050 @@ header {
     padding-bottom: 15px;    
   }
 }
+/* -------------------------------------------------------------MARCAS------------------------------------------------------------- */
+
+.marcas {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px; /* Adiciona espaçamento entre as imagens */
+}
+
+.marcas img {
+  width: auto;
+  max-height: 250px; /* Ajuste o tamanho conforme necessário */
+  background: transparent; /* Garante que o fundo da imagem seja transparente */
+  box-shadow: none; /* Remove a sombra da imagem */
+  border: none; /* Remove qualquer borda que possa estar aplicada */
+  transition: transform 0.3s, box-shadow 0.3s; /* Adiciona uma transição de 0.3 segundos para os estilos */
+  cursor: pointer; /* Muda o cursor do mouse para uma mão */
+}
+
+.marcas img:hover {
+  transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra à imagem */
+}
 
 
+.marca_bmw {
+  width: 20%;
+  margin-bottom: 15%;
+  clip-path: circle(40% at center); /* Ajuste o valor para melhor clipagem */
+}
+
+.marca_audi {
+  width: 250%;
+  margin-bottom: 40%;
+  margin-top: 10%;
+  clip-path: circle(50% at center); /* Ajuste o valor para melhor clipagem */
+}
+
+.marca_toyota {
+  width: 13%;
+  margin-bottom: 5%;
+  clip-path: circle(50% at center); /* Ajuste o valor para melhor clipagem */
+}
+
+.marca_hyundai {
+  width: 9%;
+  margin-bottom: 5%;
+  clip-path: circle(43% at center); /* Ajuste o valor para melhor clipagem */
+}
+/* -------------------------------------------------------------MARCAS------------------------------------------------------------- */
+.contato {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.folder_contato {
+  width: 40%;
+  margin-top: -50px;
+}
+
+.texto_contato {
+  font-size: 2.3rem;
+  line-height: 1.5;
+  align-items: center;
+}
+
+.texto_contato strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 2.8rem;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer.col-md-4 {
+  flex-basis: 33.33%;
+  margin: 20px;
+}
+
+.footer h4 {
+  margin-top: 0;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer li {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ccc;
+}
+
+.copyright {
+  background-color: #222;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+/* -------------------------------------------------------------FORMULARIO------------------------------------------------------------- */
+
+.content
+{
+  display:flex;
+  justify-content:right;
+  flex-direction: row;
+}  
+
+.ctt
+{
+  width: 100%;
+  max-width: 500px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+.field
+{
+  padding:30px;
+  margin-bottom:26px;
+  border: 5px solid #DDD; 
+  border-radius: 10px;
+}
+
+textarea
+{
+  height: 100px;
+} 
+
+
+/* -------------------------------------------------------------Compra------------------------------------------------------------- */
+/* -------------------------------------------------------------HB20------------------------------------------------------------- */
+.compra_hb20{
+  display: flex;
+  align-items: center;
+  margin-top: 15%;
+  margin-right: 5%;
+}
+
+.compra_hb20 img {
+  max-width: 60%;
+  height: auto;
+  margin-right: 10px;
+  width: 50%;
+  margin-left: 8%;
+}
+
+.compra_hb20 h1 {
+  font-size: 3.2rem;
+  margin-bottom: 15px;
+}
+
+.compra_hb20 span {
+  font-size: 2.0rem;
+  color: #333;
+   margin-bottom: 15px;
+}
+
+.texto_compra_hb20{
+  display: flex;
+  flex-direction: column;
+}
+
+.icone_wpp{
+  margin-top: 15px;
+  margin-left: 1%;
+}
+
+.descricao_hb20 {
+  margin-top: 2%;
+}
+
+.descricao_hb20 h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.descricao_hb20 p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+/* -------------------------------------------------------------Corolla------------------------------------------------------------- */
+.compra_corolla{
+  display: flex;
+  align-items: center;
+  margin-top: 15%;
+  margin-right: 5%;
+}
+
+.compra_corolla img {
+  max-width: 60%;
+  height: auto;
+  margin-right: 5%;
+  width: 50%;
+  gap: 20%;
+  margin-left: 7%;
+}
+
+.compra_corolla h1 {
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+}
+
+.compra_corolla span {
+  font-size: 2.0rem;
+  color: #333;
+   margin-bottom: 10px;
+}
+
+.texto_compra_corolla{
+  display: flex;
+  flex-direction: column;
+}
+
+.descricao_corolla {
+  margin-top: 5%;
+}
+
+.descricao_corolla h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.descricao_corolla p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+  /* -------------------------------------------------------------Onix------------------------------------------------------------- */
+  .compra_onix{
+    display: flex;
+    align-items: center;
+    margin-top: 15%;
+    margin-right: 5%;
+  }
+  
+  .compra_onix img {
+    max-width: 60%;
+    height: auto;
+    margin-right: 5%;
+    width: 100%;
+    gap: 20%;
+    margin-left: 7%;
+  }
+  
+  .compra_onix h1 {
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .compra_onix span {
+    font-size: 2.0rem;
+    color: #333;
+     margin-bottom: 10px;
+  }
+  
+  .texto_compra_onix{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .descricao_onix {
+    margin-top: 5%;
+  }
+  
+  .descricao_onix h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .descricao_onix p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  /* -------------------------------------------------------------Evoque------------------------------------------------------------- */
+  .compra_evoque{
+    display: flex;
+    align-items: center;
+    margin-top: 15%;
+    margin-right: 5%;
+  }
+  
+  .compra_evoque img {
+    max-width: 60%;
+    height: auto;
+    margin-right: 5%;
+    width: 100%;
+    gap: 20%;
+    margin-left: 7%;
+  }
+  
+  .compra_evoque h1 {
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .compra_evoque span {
+    font-size: 2.0rem;
+    color: #333;
+     margin-bottom: 10px;
+  }
+  
+  .texto_compra_evoque{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .descricao_evoque {
+    margin-top: 5%;
+  }
+  
+  .descricao_evoque h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .descricao_evoque p {
+    font-size: 1.0rem;
+    line-height: 1.6;
+    color: #555;
+  }
+   /* -------------------------------------------------------------BMW------------------------------------------------------------- */
+   .compra_bmw{
+    display: flex;
+    align-items: center;
+    margin-top: 15%;
+    margin-right: 5%;
+  }
+  
+  .compra_bmw img {
+    max-width: 60%;
+    height: auto;
+    margin-right: 5%;
+    width: 100%;
+    gap: 20%;
+    margin-left: 7%;
+  }
+  
+  .compra_bmw h1 {
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .compra_bmw span {
+    font-size: 2.0rem;
+    color: #333;
+     margin-bottom: 10px;
+  }
+  
+  .texto_compra_bmw{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .descricao_bmw {
+    margin-top: 5%;
+  }
+  
+  .descricao_bmw h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .descricao_bmw p {
+    font-size: 1.0rem;
+    line-height: 1.6;
+    color: #555;
+  }
+   /* -------------------------------------------------------------audi------------------------------------------------------------- */
+   .compra_audi{
+    display: flex;
+    align-items: center;
+    margin-top: 15%;
+    margin-right: 5%;
+  }
+  
+  .compra_audi h1 {
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .compra_audi span {
+    font-size: 2.0rem;
+    color: #333;
+     margin-bottom: 10px;
+  }
+  
+  .texto_compra_audi{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .descricao_audi {
+    margin-top: 5%;
+  }
+  
+  .descricao_audi h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .descricao_audi p {
+    font-size: 1.0rem;
+    line-height: 1.6;
+    color: #555;
+  }
+ /* -------------------------------------------------------------Tela Modelos Audi------------------------------------------------------------- */
+ .tela_carros_audi {
+  display: flex;
+  gap: 120px; /* Espaçamento entre os cards */
+  flex-wrap: wrap; /* Permite que os cards se ajustem em várias linhas, se necessário */
+  justify-content: center;
+  padding: 20px;
+}
+
+.card_carros_audi {
+  background-color: #f0f0f0;
+  min-width: 400px;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px #aaa;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Adicionado margem inferior nos cards */
+}
+
+.card_carros_audi img {
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.card_carros_audi h1 {
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.card_carros_audi span {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: "Roboto Slab", serif;
+}
+
+.botao_comprar {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botao_comprar:hover {
+  background-color: #555;
+}
+
+.audia3_sportback_modelos{
+  width: 95%;
+
+}
+
+.audia7_2021_modelos{
+  width: 100%;
+  
+}
+
+.audiq3_sportback_modelos{
+  width: 90%;
+  margin-top: 16%;
+}
+
+.audirs5_modelos{
+  width: 85%;
+  margin-top: 3%;
+}
+
+.audia4_modelos{
+  width: 85%;
+}
+
+.audirs_modelos{
+  width: 85%;
+}
+
+.faixa_divisoria_audi {
+  background-color: #f0f0f0; 
+  /* padding: 80px 0; Espaçamento interno para a faixa divisória */
+  padding-top: 220px;
+  padding-bottom: 40px;
+  margin-bottom: 45px;
+}
+
+.faixa_divisoria_audi::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #333;
+  width: 50px;
+  margin: 0 auto 20px auto; /* Espaçamento automático para centralizar */
+}
+
+.faixa_divisoria_audi h1{
+  font-size: 40px;
+  text-align: center;
+  margin-top: -90px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+/* -------------------------------------------------------------Ajuste Imagem Tela Compra Modelos Audi ------------------------------------------------------------- */
+.audia7_compra{
+  height: auto;
+  margin-right: 5%;
+  width: 50%;
+  gap: 20%;
+  margin-left: 7%;
+}
+
+.audia3_compra{
+  height: auto;
+  margin-right: 5%;
+  width: 140%;
+  gap: 20%;
+  margin-left: 10%;
+}
+
+.audiq3_compra{
+  height: auto;
+  margin-right: 5%;
+  width: 100%;
+  gap: 20%;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+
+.audirs5_compra{
+  height: auto;
+  margin-right: 5%;
+  width: 140%;
+  gap: 20%;
+  margin-left: 13%;
+  margin-top: 2%;
+}
+
+.audia4_compra{
+  height: auto;
+  margin-right: 5%;
+  width: 140%;
+  gap: 20%;
+  margin-left: 13%;
+}
+
+.audirs_compra{
+  height: auto;
+  margin-right: 5%;
+  width: 140%;
+  gap: 20%;
+  margin-left: 13%;
+}
+
+/* -------------------------------------------------------------Tela Modelos BMW------------------------------------------------------------- */
+.tela_carros_bmw {
+  display: flex;
+  gap: 120px; /* Espaçamento entre os cards */
+  flex-wrap: wrap; /* Permite que os cards se ajustem em várias linhas, se necessário */
+  justify-content: center;
+  padding: 20px;
+}
+
+.card_carros_bmw {
+  background-color: #f0f0f0;
+  min-width: 400px;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px #aaa;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Adicionado margem inferior nos cards */
+}
+
+.card_carros_bmw img {
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.card_carros_bmw h1 {
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.card_carros_bmw span {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: "Roboto Slab", serif;
+}
+
+.botao_comprar {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bmwx4_modelos{
+  width: 93%;
+  margin-top: 12%;
+}
+
+.bmwz4_modelos{
+  width: 100%;
+  margin-top: 2%;
+}
+
+.bmwm2_modelos{
+  width: 119%;
+  margin-top: 10%;
+}
+
+.bmw320i_modelos{
+  width: 100%;
+}
+
+.bmwx3_modelos{
+  width: 88%;
+  margin-top: 8%;
+}
+
+.bmw640i_modelos{
+  width: 100%;
+}
+
+
+.faixa_divisoria_bmw {
+  background-color: #f0f0f0; 
+  /* padding: 80px 0; Espaçamento interno para a faixa divisória */
+  padding-top: 220px;
+  padding-bottom: 40px;
+  margin-bottom: 45px;
+}
+
+.faixa_divisoria_bmw::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #333;
+  width: 50px;
+  margin: 0 auto 20px auto; /* Espaçamento automático para centralizar */
+}
+
+.faixa_divisoria_bmw h1{
+  font-size: 40px;
+  text-align: center;
+  margin-top: -90px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+
+
+/* -------------------------------------------------------------Tela compra BMW------------------------------------------------------------- */
+.compra_bmw{
+  display: flex;
+  align-items: center;
+  margin-top: 15%;
+  margin-right: 5%;
+}
+
+.compra_bmw h1 {
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+}
+
+.compra_bmw span {
+  font-size: 2.0rem;
+  color: #333;
+   margin-bottom: 10px;
+}
+
+.texto_compra_bmw{
+  display: flex;
+  flex-direction: column;
+}
+
+.descricao_bmw {
+  margin-top: 5%;
+}
+
+.descricao_bmw h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.descricao_bmw p {
+  font-size: 1.0rem;
+  line-height: 1.6;
+  color: #555;
+}
+/* -------------------------------------------------------------Ajuste Imagem Tela Modelos BMW ------------------------------------------------------------- */
+.bmwz4_compra{
+  height: auto;
+  margin-right: 5%;
+  width: 140%;
+  gap: 20%;
+  margin-left: 13%;
+}
+
+.bmwm2_compra{
+  height: auto;
+  margin-right: 5%;
+  width: 140%;
+  gap: 20%;
+  margin-left: 18%;
+}
+
+.bmw320i_compra{
+  height: auto;
+  margin-right: 5%;
+  width: 140%;
+  gap: 20%;
+  margin-left: 18%;
+}
+
+/*---------------------------------------------------------------------- Telas Modelo Toyota ------------------------------------------------------------------------*/
+
+.tela_carros_toyota {
+  display: flex;
+  gap: 120px; /* Espaçamento entre os cards */
+  flex-wrap: wrap; /* Permite que os cards se ajustem em várias linhas, se necessário */
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+}
+
+
+.card_carros_toyota {
+  background-color: #f0f0f0;
+  min-width: 400px;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px #aaa;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Adicionado margem inferior nos cards */
+}
+
+.card_carros_toyota img {
+  height: auto;
+  border-bottom: 1px solid #ccc;
+  width: 100%; /* Ajustado para ocupar 100% da largura do card */
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.card_carros_toyota h1 {
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.card_carros_toyota span {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: "Roboto Slab", serif;
+}
+
+.botao_comprar {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Ajustes para imagens específicas */
+
+
+.faixa_divisoria_toyota {
+  background-color: #f0f0f0; 
+  padding-top: 80px; /* Ajustado o espaçamento superior */
+  padding-bottom: 40px;
+  margin-bottom: 45px;
+}
+
+.faixa_divisoria_toyota::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #333;
+  width: 50px;
+  margin: 0 auto 20px auto;
+}
+
+.faixa_divisoria_toyota h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: -90px; /* Corrigido o ajuste de margem */
+}
+
+/*-------------------------------Ajuste de imagem---------------------------------------- */
+
+.compra_supra {
+  display: flex;
+  justify-content: flex-end; /* Alinha o conteúdo à direita da tela */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  height: 100vh; /* Altura total da viewport */
+  padding-right: 5%; /* Adiciona um pequeno espaçamento à direita */
+}
+
+.compra_supra img {
+  max-width: 100%; 
+  max-height: 80vh;  
+  object-fit: contain; 
+}
+
+
+.compra_gr {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Altura total da viewport */
+  width: 100%; /* Ocupa toda a largura disponível */
+}
+
+.compra_gr img {
+  max-width: 100%;
+  height: auto;
+}
+
+.compra_gr img {
+  width: 800px;
+
+}
+
+.compra_etios {
+  height: auto;
+  margin-right: 5%;
+  width: 100%; /* Ajustado para ocupar 100% da largura */
+  gap: 20%; /* Gap não é uma propriedade válida para imagens */
+  margin-left: 0%; /* Ajuste da margem */
+}
+
+
+
+/* -------------------------------------------------------------Tela Modelos HYUNDAI------------------------------------------------------------- */
+.tela_carros_hyundai {
+  display: flex;
+  gap: 120px; /* Espaçamento entre os cards */
+  flex-wrap: wrap; /* Permite que os cards se ajustem em várias linhas, se necessário */
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+.card_carros_hyundai {
+  background-color: #f0f0f0;
+  min-width: 400px;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px #aaa;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Adicionado margem inferior nos cards */
+}
+
+.card_carros_hyundai img {
+  height: auto;
+  border-bottom: 1px solid #ccc;
+  width: 100%; /* Ajustado para ocupar 100% da largura do card */
+}
+
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.card_carros_hyundai h1 {
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.card_carros_hyundai span {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-family: "Roboto Slab", serif;
+}
+
+.botao_comprar {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.faixa_divisoria_hyundai  {
+  background-color: #f0f0f0; 
+  /* padding: 80px 0; Espaçamento interno para a faixa divisória */
+  padding-top: 220px;
+  padding-bottom: 40px;
+  margin-bottom: 45px;
+}
+
+.faixa_divisoria_hyundai ::before {
+  content: "";
+  display: block;
+  height: 4px;
+  background-color: #333;
+  width: 50px;
+  margin: 0 auto 20px auto; /* Espaçamento automático para centralizar */
+}
+
+.faixa_divisoria_hyundai  h1{
+  font-size: 40px;
+  text-align: center;
+  margin-top: -90px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+
+/* -------------------------------------------------------------Ajuste Imagem Tela Modelos BMW ------------------------------------------------------------- */
+.compra_i30 {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  flex-direction: row; /* Coloca a descrição ao lado direito da imagem */
+  height: auto;
+  margin: 0 auto; /* Centraliza o contêiner em si */
+  gap: 20px; /* Espaçamento entre a imagem e a descrição */
+  padding: 20px; /* Padding opcional */
+}
+
+.descricao_i30 {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%; /* Ajusta conforme necessário */
+}
+
+.sonata_compra
+ {
+  text-align: center;
+  margin-right: 5%;
+  width: 60%;
+  gap: 20%;
+  margin-left: 18%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.elantra_compra
+{
+  height: auto;
+  margin-right: 5%;
+  width: 140%;
+  gap: 20%;
+  margin-left: 18%;
+}
+.creta_compra
+{
+  height: auto;
+  margin-right: 5%;
+  width: 140%;
+  gap: 20%;
+  margin-left: 18%;
+}
+
+.tucson_compra
+{
+  height: auto;
+  margin-right: 5%;
+  width: 140%;
+  gap: 20%;
+  margin-left: 18%;
+}
